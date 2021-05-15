@@ -1,0 +1,38 @@
+.row {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.content {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.content::-webkit-scrollbar {
+  display: none;
+}
+.main {
+  max-width: 180px;
+  margin-right: 7px;
+}
+
+.main .recommend {
+  object-fit: contain;
+  width: 180px;
+  height: 90px;
+  background: greenyellow;
+  border-radius: 2px;
+}
+.main .text {
+  font-size: 12px;
+  height: 28px;
+}
+
+/* End Top Pick */
+
+.main .default {
+  object-fit: contain;
+  width: 117px;
+  height: 90px;
+  background: yellow;
+  border-radius: 2px;
+}
