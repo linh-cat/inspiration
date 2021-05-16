@@ -1,6 +1,6 @@
 .header {
   text-align: center;
-  padding-top: 100px;
+  padding-top: 80px;
   padding-bottom: 30px;
   padding-right: 10px;
   padding-left: 10px;
@@ -46,9 +46,8 @@
   width: 270px;
   height: 72px;
   position: absolute;
-  left: 25%;
-  bottom: -10px;
-  display: none;
+  right: 0;
+  bottom: 7%;
 }
 .button__group .icon {
   display: flex;
