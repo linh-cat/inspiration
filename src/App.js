@@ -28,15 +28,15 @@ function App() {
           <div className="icon__group">
             <div className="icon__group--view">
               <img src="/svg_widget_seen.png" alt="seen" />
-              <p>999999</p>
+              <p>9999</p>
             </div>
             <div className="icon__group--like">
               <img src="/svg_widget_like.png" alt="like" />
-              <p>999000</p>
+              <p>9990</p>
             </div>
             <div className="icon__group--share">
               <img src="/svg_widget_share.png" alt="share" />
-              <p>999903</p>
+              <p>999</p>
             </div>
           </div>
         </div>
