@@ -19,3 +19,31 @@
 .gallery__recommend {
   margin-top: 10px;
 }
+/* button */
+.button__group {
+  color: #fff;
+  background: rgba(200, 16, 46, 0.65);
+  box-shadow: 10px 10px 40px rgba(51, 63, 72, 0.25);
+  backdrop-filter: blur(12px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  width: 270px;
+  height: 72px;
+  position: absolute;
+  left: 35%;
+  bottom: 30px;
+}
+.button__group .icon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 72px;
+  text-align: center;
+}
+
+.icon__group {
+  display: flex;
+  width: 200px;
+  justify-content: space-around;
+}
