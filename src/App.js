@@ -3,6 +3,12 @@ import "./App.css";
 import Row from "./Row";
 
 function App() {
+  const activeMemories = () => {
+    const active = document.getElementById("active");
+    const elPlayer = document.getElementById("player");
+    active.classList.toggle("playerActive");
+    elPlayer.classList.toggle("spinPlayer");
+  };
   return (
     <div className="app">
       <div className="header">
@@ -20,27 +26,33 @@ function App() {
       <div className="gallery__recommend">
         <Row title="Gallery Recommends" />
       </div>
-      <div className="button__group">
-        <div className="icon">
-          <div className="icon__player">
-            <img alt="player" src="/player.png" />
+
+      <ul className="memories__group" id="active">
+        <li>
+          <div className="player" onClick={activeMemories}>
+            <img alt="player" src="/player.png" id="player" />
           </div>
-          <div className="icon__group">
-            <div className="icon__group--view">
-              <img src="/svg_widget_seen.png" alt="seen" />
-              <p>9999</p>
+          <div className="action_group">
+            <div className="action_icons">
+              <div className="icon__group--view">
+                <img src="/svg_widget_seen.png" alt="seen" />
+                <p>9999</p>
+              </div>
+              <div className="icon__group--like">
+                <img src="/svg_widget_like.png" alt="like" />
+                <p>9990</p>
+              </div>
+              <div className="icon__group--share">
+                <img src="/svg_widget_share.png" alt="share" />
+                <p>999</p>
+              </div>
             </div>
-            <div className="icon__group--like">
-              <img src="/svg_widget_like.png" alt="like" />
-              <p>9990</p>
-            </div>
-            <div className="icon__group--share">
-              <img src="/svg_widget_share.png" alt="share" />
-              <p>999</p>
+            <div className="action_text">
+              <p>Join our Gallery Memories</p>
             </div>
           </div>
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
   );
 }

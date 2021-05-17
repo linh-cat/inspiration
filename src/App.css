@@ -1,6 +1,6 @@
 .header {
   text-align: center;
-  padding-top: 80px;
+  padding-top: 30px;
   padding-bottom: 30px;
   padding-right: 10px;
   padding-left: 10px;
@@ -21,21 +21,7 @@
 }
 /* button */
 
-.icon__player {
-  margin-left: 10px;
-  width: 54px;
-  height: 54px;
-  background: #fff;
-  border-radius: 50%;
-  position: relative;
-}
-.icon__player img {
-  position: absolute;
-  top: 25%;
-  left: 25%;
-}
-
-.button__group {
+.memories__group {
   color: #fff;
   background: rgba(200, 16, 46, 0.65);
   box-shadow: 10px 10px 40px rgba(51, 63, 72, 0.25);
@@ -43,22 +29,62 @@
   /* Note: backdrop-filter has minimal browser support */
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
-  width: 270px;
-  height: 72px;
-  position: absolute;
+  position: fixed;
+  width: 300px;
+  bottom: 5%;
   right: 0;
-  bottom: 7%;
-}
-.button__group .icon {
+  padding: 10px 3px;
   display: flex;
   justify-content: space-around;
+  flex-direction: column;
+  transform: translateX(250px);
+}
+
+.memories__group li {
+  display: flex;
   align-items: center;
-  height: 72px;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+
+.memories__group .action_group {
+  display: flex;
+  flex-direction: column;
+}
+
+.player {
+  width: 54px;
+  height: 54px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+}
+
+.player img {
+  position: absolute;
+  top: 25%;
+  left: 24%;
+}
+
+.action_group .action_icons {
+  width: 200px;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.action_group .action_text {
+  font-size: 12px;
+  line-height: 17px;
   text-align: center;
 }
 
-.icon__group {
-  display: flex;
-  width: 200px;
-  justify-content: space-around;
+.playerActive {
+  transform: translateX(0);
+  transition: transform 1s ease-in-out !important;
+}
+
+.spinPlayer {
+  transform: rotate(360deg);
+  transition: transform 1.3s;
 }
